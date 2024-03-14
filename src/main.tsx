@@ -10,6 +10,8 @@ import History from "./pages/history";
 import MyContent from "./pages/myContent";
 import Collection from "./pages/collection";
 import Subscribers from "./pages/subscribers";
+import Support from "./pages/support";
+import Settings from "./pages/settings";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
             {
                 path: "/subscribers",
                 element: <Subscribers />,
+            },
+            {
+                path: "/support",
+                element: <Support />,
+            },
+            {
+                path: "/setting",
+                element: <Settings />,
             },
         ],
     },
