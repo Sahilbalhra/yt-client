@@ -1,7 +1,12 @@
-const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+import { ThemeProvider } from "@/context/theme-provider";
+import { ModeToggle } from "./components/mode-toggle";
 
-export default App
+const App = () => {
+    return (
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+            <ModeToggle />
+        </ThemeProvider>
+    );
+};
+
+export default App;
