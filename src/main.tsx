@@ -12,6 +12,7 @@ import Collection from "./pages/collection";
 import Subscribers from "./pages/subscribers";
 import Support from "./pages/support";
 import Settings from "./pages/settings";
+import SearchValue from "./pages/search";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />,
+            },
+            {
+                path: "/:searchValue",
+                element: <SearchValue />,
             },
             {
                 path: "/likedVideos",
