@@ -1,7 +1,13 @@
-const SearchValue = () => {
-  return (
-    <div>SearchValue</div>
-  )
-}
+import InfoCard from "@/components/Home/InfoCard";
+import InfoCardSkeleton from "@/components/Home/InfoCardSkeleton";
 
-export default SearchValue
+const SearchValue = () => {
+    return (
+        <main>
+            <InfoCard variant="horizontal" />
+            <InfoCardSkeleton variant="horizontal" />
+        </main>
+    );
+};
+
+export default SearchValue;
