@@ -14,6 +14,7 @@ import Support from "./pages/support";
 import Settings from "./pages/settings";
 import SearchValue from "./pages/search";
 import Watch from "./pages/watch";
+import LogIn from "./pages/user/login";
 
 const router = createBrowserRouter([
     {
@@ -60,8 +61,19 @@ const router = createBrowserRouter([
                 path: "/watch",
                 element: <Watch />,
             },
+            
         ],
     },
+    {
+        path: "/user",
+        children: [
+            {
+                path: "login",
+                element: <LogIn />,
+            },
+        ],
+    },
+    
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
