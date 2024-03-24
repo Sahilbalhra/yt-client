@@ -13,6 +13,7 @@ import Subscribers from "./pages/subscribers";
 import Support from "./pages/support";
 import Settings from "./pages/settings";
 import SearchValue from "./pages/search";
+import Watch from "./pages/watch";
 
 const router = createBrowserRouter([
     {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
             {
                 path: "/setting",
                 element: <Settings />,
+            },
+            {
+                path: "/watch",
+                element: <Watch />,
             },
         ],
     },

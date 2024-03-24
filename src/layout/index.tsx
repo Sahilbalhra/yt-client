@@ -8,8 +8,8 @@ const Layout = () => {
         <>
             <TopBar />
             <SideBar />
-            <div className="p-4 sm:ml-64">
-                <div className="p-4 mt-14">{<Outlet />}</div>
+            <div className="p-4 mt-14 sm:ml-64  mb-10 sm:mb-0">
+                {<Outlet />}
             </div>
             <BottomBar />
         </>
